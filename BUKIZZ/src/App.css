@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  max-width: 1920px;
+  min-width: 100vw;
+  text-align: center;
+  background-color: #f4f7ff;
+}
+.Navigation {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  width: 100%;
+}
