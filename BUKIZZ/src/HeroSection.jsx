@@ -43,7 +43,7 @@ function HeroSection() {
           <div className="heroButtonBox">
             <button className="heroButton">
               Book Free Demo{" "}
-              <div className="arrowLeftSVG">
+              {/* <div className="arrowLeftSVG">
                 <svg
                   width="42"
                   height="43"
@@ -70,7 +70,7 @@ function HeroSection() {
                     />
                   </g>
                 </svg>
-              </div>
+              </div> */}
             </button>
           </div>
         </div>

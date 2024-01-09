@@ -2,6 +2,9 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import FeatureSection from "./FeatureSection";
 import InstallBanner from "./InstallBanner";
+import Clients from "./Clients";
+import FinalBanner from "./FinalBanner";
+import Footer from "./Footer";
 import "./App.css";
 
 function App() {
@@ -18,6 +21,17 @@ function App() {
       </div>
       <div className="InstallBanner">
         <InstallBanner />
+      </div>
+      <div className="Clients">
+        <Clients />
+      </div>
+      <div className="footerBG">
+        <div className="FinalBanner">
+          <FinalBanner />
+        </div>
+        <div className="Footer">
+          <Footer />
+        </div>
       </div>
     </>
   );
