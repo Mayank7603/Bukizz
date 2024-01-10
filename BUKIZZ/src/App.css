@@ -32,6 +32,11 @@
   margin-top: 200px;
   z-index: 4;
 }
+.Carousel {
+  margin-top: 200px;
+  z-index: 4;
+  width: 100%;
+}
 .FinalBanner {
   margin-top: 200px;
   z-index: 8;
