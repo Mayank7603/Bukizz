@@ -1,4 +1,4 @@
-.installBannerMainBox {
+/* .mainBox {
   width: 80%;
   background: linear-gradient(180deg, #39a7ff 0%, #87c4ff 100%);
   box-shadow: 0px 8px 64px 0px #49108b26;
@@ -8,22 +8,7 @@
   margin-top: 250px;
   overflow: hidden;
 }
-.rect1 {
-  position: relative;
-  height: 250px;
-  top: 0px;
-  left: -275px;
-  rotate: 0deg;
-  mix-blend-mode: overlay;
-}
-.rect2 {
-  position: relative;
-  height: 250px;
 
-  left: -390px;
-  top: 0px;
-  mix-blend-mode: overlay;
-}
 
 .img1 {
   position: relative;
@@ -38,7 +23,7 @@
   height: 250px;
 }
 
-.textArea {
+.ta {
   position: relative;
   top: -485px;
   left: 40px;
@@ -78,4 +63,14 @@
   height: 60px;
   background: url("appstore.png");
   background-size: cover;
+} */
+
+
+.rect2 {
+  mix-blend-mode: overlay;
+}
+
+.rect1 {
+  position: relative;
+  mix-blend-mode: overlay;
 }

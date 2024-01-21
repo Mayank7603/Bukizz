@@ -7,12 +7,13 @@
   flex-direction: row;
   align-items: center;
   width: 86vw;
-  height: 40px;
+  height: 70px;
   padding: 24px 54px 24px 54px;
   border-radius: 100px;
   justify-content: space-between;
   background: #ffffffcc;
   box-shadow: 0px 11px 60px 0px #39a7ff1a;
+  color: black;
 }
 .navbarTextSection {
   display: flex;
@@ -59,7 +60,6 @@
 }
 .expandMoreSVG {
   height: 35px;
-  background: #ffffffcc;
   border: 0;
   padding: 0;
   padding-left: 8px;

@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav className="navbarMainBox">
+    <nav className="navbarMainBox ">
       <div className="navbarTextSection">
         <div className="logoBox">
           <div className="logo">
