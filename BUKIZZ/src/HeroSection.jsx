@@ -1,8 +1,10 @@
+import { useRef } from "react";
 import "./HeroSection.css";
 import ReactPlayer from 'react-player'
 
 
 function HeroSection() {
+
   return (
     <>
       <div className="heroSectionMainBox">
@@ -49,7 +51,9 @@ function HeroSection() {
           </div>
         </div>
         <div className="promotionalVideo">
-          <ReactPlayer url={'Image.mp4'} loop={true} playing={true} />
+        <video  autoPlay loop muted >
+          <source src="Image.mp4" type="video/mp4"/>
+        </video>
         </div>
       </div>
     </>

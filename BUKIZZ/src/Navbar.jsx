@@ -1,8 +1,10 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   return (
-    <nav className="navbarMainBox ">
+    <nav className="navbarMainBox h-20 w-full mx-12">
       <div className="navbarTextSection">
         <div className="logoBox">
           <div className="logo">
@@ -58,7 +60,7 @@ export default function Navbar() {
             </button>
           </div>
           <div className="navHeadingContactUs">
-            <p>Contact Us</p>
+            <Link to={"/contact"}><p>Contact Us</p></Link>
           </div>
           <div className="navHeadingAboutUs">
             <p>About us</p>
