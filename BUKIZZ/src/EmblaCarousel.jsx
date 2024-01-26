@@ -1,30 +1,38 @@
-import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
-import imageByIndex from './imageByIndex'
+import React from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import imageByIndex from './imageByIndex';
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props
-  const [emblaRef] = useEmblaCarousel(options, [Autoplay({delay:3000})])
+	const { slides, options } = props;
+	const [emblaRef] = useEmblaCarousel(options, [Autoplay({ delay: 3000 })]);
 
-  return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-             
-              <img
-                className="embla__slide__img"
-                src={imageByIndex(index)}
-                alt="Your alt text"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
+	return (
+		<div>
+			<div className="font-bold text-2xl bg-gradient-to-r from-violet-600 to-sky-600 inline-block text-transparent bg-clip-text">
+				Our Community share their Bukizz Experience
+			</div>
+			<div className="embla">
+				<div
+					className="embla__viewport "
+					ref={emblaRef}>
+					<div className="embla__container">
+						{slides.map((index) => (
+							<div
+								className="embla__slide "
+								key={index}>
+								<img
+									className="embla__slide__img  h-[100%]"
+									src={imageByIndex(index)}
+									alt="Your alt text"
+								/>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
 
-export default EmblaCarousel
+export default EmblaCarousel;

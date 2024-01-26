@@ -29,13 +29,11 @@ function App() {
 			<div className="Carousel">
 				<Carousel />
 			</div>
+			<div className="FinalBanner">
+				<FinalBanner />
+			</div>
 			<div className="footerBG">
-				<div className="FinalBanner">
-					<FinalBanner />
-				</div>
-				<div className="Footer">
-					<Footer />
-				</div>
+				<Footer />
 			</div>
 		</>
 	);
