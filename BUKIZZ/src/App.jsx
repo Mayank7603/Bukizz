@@ -23,10 +23,14 @@ function App() {
 			<div className="InstallBanner my-20">
 				<InstallBanner />
 			</div>
-			<div className="Clients my-20">
+			<div
+				id="clientsID"
+				className="Clients my-20">
 				<Clients />
 			</div>
-			<div className="Carousel my-20">
+			<div
+				id="testID"
+				className="Carousel my-20">
 				<Carousel />
 			</div>
 			<div className="FinalBanner my-16">

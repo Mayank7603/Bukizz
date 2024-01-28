@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Logo from '../public/Logo.png';
-import { IconMenu2 } from '@tabler/icons-react';
+import { IconCross, IconMenu2, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Drawer } from '@mui/material';
 
@@ -14,7 +14,15 @@ export default function Navbar() {
 				anchor="right"
 				open={open}
 				onClose={() => setOpen(false)}>
-				Mayank Saini
+				<IconX className="font-bold h-10 w-20 pt-4 pl-1" />
+
+				<div className="flex flex-col pt-16 pl-16  w-56 gap-12 font-semibold text-2xl">
+					<p>Solution</p>
+					<Link to="/contact">
+						<p>Contact</p>
+					</Link>
+					<p>About</p>
+				</div>
 			</Drawer>
 
 			<div className="flex justify-between bg-white md:rounded-3xl h-16 px-4 md:w-[%] md:h-16">
@@ -31,7 +39,7 @@ export default function Navbar() {
 								<a href="#">Solution</a>
 							</li>
 							<li>
-								<a href="#">Contact</a>
+								<Link to="/contact">Contact</Link>
 							</li>
 							<li>
 								<a href="#">About</a>

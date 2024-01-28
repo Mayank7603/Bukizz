@@ -3,7 +3,9 @@ import choose from '../public/choose.png';
 export default function Clients() {
 	return (
 		<>
-			<div className="flex flex-col p-4 px-5 gap-3 md:flex-row md:justify-around ">
+			<div
+				id="clientsId"
+				className="flex flex-col p-4 px-5 gap-3 md:flex-row md:justify-around ">
 				<div className="md:text-left md:w-[400px] md:ml-12 flex flex-col gap-4 md:gap-0">
 					<div className="text-left font-bold text-[35px]  bg-gradient-to-r from-violet-600 to-sky-600 inline-block text-transparent bg-clip-text md:pb-4">
 						Schools that we serve

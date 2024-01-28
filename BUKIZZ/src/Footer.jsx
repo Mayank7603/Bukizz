@@ -1,5 +1,6 @@
 import './Footer.css';
-
+import Clients from './Clients';
+import { Link } from 'react-scroll';
 export default function Footer() {
 	return (
 		<>
@@ -31,23 +32,20 @@ export default function Footer() {
 							<p className="">+1283871239190213021</p>
 						</div> */}
 					</div>
-					<div className="flex md:flex-col justify-between gap-10 pt-2 md:pt-0">
+					<div className="flex justify-between gap-10 md:gap-28 pt-2 md:pt-0">
 						<div className="row1 flex gap-1">
 							<h3 className="rowHeading">Company</h3>
 							<div className="text-sm text-left md:text-slate-700">
 								<p className="">Solutions</p>
-								<p className="">Contact Us</p>
-								<p className="">Testimonial</p>
-								<p className="">Clients</p>
-							</div>
-						</div>
-
-						<div className="row2 flex gap-1">
-							<h3 className="rowHeading">Product</h3>
-							<div className="text-sm text-left md:text-slate-700">
-								<p className="">Courses</p>
-								<p className="">Pricing</p>
-								<p className="">Blog</p>
+								<Link to="/contactID">
+									<p className="">Contact Us</p>
+								</Link>
+								<Link to="testID">
+									<p className="">Testimonial</p>
+								</Link>
+								<Link to="clientsID">
+									<p className="">Clients</p>
+								</Link>
 							</div>
 						</div>
 						<div className="row3  flex gap-1">
@@ -57,9 +55,17 @@ export default function Footer() {
 								<p className="">Privacy policy</p>
 							</div>
 						</div>
+						<div className="row2 flex gap-1">
+							<h3 className="rowHeading">Product</h3>
+							<div className="text-sm text-left md:text-slate-700">
+								<p className="">Courses</p>
+								<p className="">Pricing</p>
+								<p className="">Blog</p>
+							</div>
+						</div>
 					</div>
-					<div className="socials">
-						<button className="socialButton">
+					<div className="flex gap-6">
+						<div className="">
 							<svg
 								width="42"
 								height="42"
@@ -80,8 +86,8 @@ export default function Footer() {
 									fill="#3D3B40"
 								/>
 							</svg>
-						</button>
-						<button className="socialButton">
+						</div>
+						<div className="">
 							<svg
 								width="42"
 								height="42"
@@ -102,8 +108,8 @@ export default function Footer() {
 									fill="#3D3B40"
 								/>
 							</svg>
-						</button>
-						<button className="socialButton">
+						</div>
+						<div className="">
 							<svg
 								width="42"
 								height="42"
@@ -136,7 +142,7 @@ export default function Footer() {
 									fill="#3D3B40"
 								/>
 							</svg>
-						</button>
+						</div>
 					</div>
 				</div>
 				<div className="copyright">© 2023 Bukizz. All rights reserved.</div>
