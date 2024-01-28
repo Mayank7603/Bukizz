@@ -7,7 +7,7 @@ import img2 from '../public/img2.png';
 function InstallBanner() {
 	return (
 		<>
-			<section className="bg-gradient-to-t from-[#39A7FF] to-[#87C4FF] backdrop-opacity-5 h-[400px] md:h-60 w-[90%]  items-center justify-center md:pt-0 rounded-2xl overflow-hidden flex flex-col md:flex-row md:mx-12 ">
+			<section className="bg-gradient-to-t from-[#39A7FF] to-[#87C4FF] backdrop-opacity-5 h-[400px] md:h-60 w-[90%]  items-center justify-center md:pt-0 rounded-2xl overflow-hidden flex flex-col md:flex-row mx-auto  ">
 				{/* /* background me slanted div ho gya hai  */}
 				<div className="w-full h-full  overflow-hidden fixed z-[-1] ">
 					<div className="absolute w-[9rem] h-[10rem] bg-sky-400 top-[-4] left-[8rem] skew-y-[20deg] rounded-[5px] "></div>
