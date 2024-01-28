@@ -14,9 +14,14 @@ export default function Navbar() {
 				anchor="right"
 				open={open}
 				onClose={() => setOpen(false)}>
-				<IconX className="font-bold h-10 w-20 pt-4 pl-1" />
+				<IconX
+					className="font-bold h-10 w-20 pt-4 pl-1"
+					onClick={() => {
+						setOpen(false);
+					}}
+				/>
 
-				<div className="flex flex-col pt-16 pl-16  w-56 gap-12 font-semibold text-2xl">
+				<div className="flex flex-col pt-16 pl-16  w-56 gap-8 font-semibold text-2xl">
 					<p>Solution</p>
 					<Link to="/contact">
 						<p>Contact</p>
