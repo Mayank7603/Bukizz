@@ -72,8 +72,8 @@ function FeatureSection() {
 		<>
 			<div className="featureSectionMainBox">
 				<div className="featureSectionTitle mt-12">
-					<p className="text-2xl md:text-3xl">What Bukizz Can</p>
-					<p className="text-2xl md:text-3xl">Do For Your School</p>
+					<p className="text-2xl md:text-4xl">What Bukizz Can</p>
+					<p className="text-2xl md:text-4xl">Do For Your School</p>
 				</div>
 				<div className="hidden md:inline-block">
 					<div className=" featuresGrid ">
@@ -89,7 +89,7 @@ function FeatureSection() {
 						})}
 					</div>
 				</div>
-				<div className="flex flex-col gap-12 pt-12 z-10 md:hidden">
+				<div className="flex flex-col gap-12 pt-12 pb-12 z-10 md:hidden">
 					{small.map((feature, index) => {
 						return (
 							<Feature

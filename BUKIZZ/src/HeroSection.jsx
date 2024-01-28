@@ -8,10 +8,10 @@ function HeroSection() {
 			<div className=" flex flex-col md:flex-row md:pt-8 items-center justify-center md:gap-32">
 				<div className="flex flex-col md:gap-6">
 					<div className="heroHeadline flex flex-col items-center gap-1 md:items-start">
-						<h2 className="text-2xl md:text-3xl text-center">
+						<h2 className="text-2xl md:text-[40px] leading-snug text-center">
 							Take Your School Digital
 						</h2>
-						<h2 className="text-2xl md:text-3xl text-center pb-3">
+						<h2 className="text-2xl md:text-[40px] leading-snug text-center pb-3">
 							Manage. Automate. Engage
 						</h2>
 						<svg
@@ -43,17 +43,17 @@ function HeroSection() {
 							</defs>
 						</svg>
 					</div>
-					<div className="text-center text-slate-500 py-3 md:w-96 md:text-left ">
+					<div className="text-center text-slate-500 py-3 md:w-96 md:text-lg md:text-left ">
 						From books to fees, parents to progress, Bukizz puts everything at
 						your fingertips.
 					</div>
 					<div className=" h-10 mx-4 md:mx-0 md:w-88 md:h-12 bg-gradient-to-r from-sky-600 to-violet-600 rounded-2xl">
-						<button className="text-white md:text-xl text-lg p-1.5 md:p-2">
+						<button className="text-white md:text-2xl md:font-semibold text-lg p-1.5 md:p-2">
 							Book Free Demo
 						</button>
 					</div>
 				</div>
-				<div className=" md:h-[450px] md:w-[450px] pt-12">
+				<div className=" md:h-[500px] md:w-[500px] pt-12">
 					<video
 						autoPlay
 						loop

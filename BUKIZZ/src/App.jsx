@@ -14,7 +14,7 @@ function App() {
 			<div className="bg-slate-100 md:pt-14 md:mx-10">
 				<Navbar />
 			</div>
-			<div className="HeroSection my-20">
+			<div className="HeroSection md:my-15">
 				<HeroSection />
 			</div>
 			<div className="FeatureSection my-20">

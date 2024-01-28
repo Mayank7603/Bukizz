@@ -4,7 +4,7 @@ export default function Footer() {
 	return (
 		<>
 			<div className="footerMainBox flex flex-col bg-gradient-to-t from-sky-600 to-slate-100 ">
-				<div className="container flex flex-col md:flex-row justify-center items-center gap-3 md:mb-4 md:gap-24 md:items-start">
+				<div className="container flex flex-col md:flex-row justify-center items-center gap-3 md:mb-4 md:gap-32 md:items-start">
 					<div className="address flex gap-1">
 						<svg
 							width="165"
@@ -26,29 +26,37 @@ export default function Footer() {
 								fill="#524FD5"
 							/>
 						</svg>
-						<div>
-							<p className="rowText">Wisdom Rd, Sco 142 Nirman Point</p>
-							<p className="rowText">+1283871239190213021</p>
+						{/* <div>
+							<p className="">Wisdom Rd, Sco 142 Nirman Point</p>
+							<p className="">+1283871239190213021</p>
+						</div> */}
+					</div>
+					<div className="flex md:flex-col justify-between gap-10 pt-2 md:pt-0">
+						<div className="row1 flex gap-1">
+							<h3 className="rowHeading">Company</h3>
+							<div className="text-sm text-left md:text-slate-700">
+								<p className="">Solutions</p>
+								<p className="">Contact Us</p>
+								<p className="">Testimonial</p>
+								<p className="">Clients</p>
+							</div>
 						</div>
-					</div>
-					<div className="row1 flex gap-1">
-						<h3 className="rowHeading">Company</h3>
-						<p className="rowText">Solutions</p>
-						<p className="rowText">Contact Us</p>
-						<p className="rowText">Testimonial</p>
-						<p className="rowText">Clients</p>
-					</div>
 
-					<div className="row2 pr-4 md:pr-0 flex gap-1">
-						<h3 className="rowHeading">Product</h3>
-						<p className="rowText">Courses</p>
-						<p className="rowText">Pricing</p>
-						<p className="rowText">Blog</p>
-					</div>
-					<div className="row3 pl-16 md:pl-0 flex gap-1">
-						<h3 className="rowHeading">Legal</h3>
-						<p className="rowText">Terms & Conditions</p>
-						<p className="rowText">Privacy policy</p>
+						<div className="row2 flex gap-1">
+							<h3 className="rowHeading">Product</h3>
+							<div className="text-sm text-left md:text-slate-700">
+								<p className="">Courses</p>
+								<p className="">Pricing</p>
+								<p className="">Blog</p>
+							</div>
+						</div>
+						<div className="row3  flex gap-1">
+							<h3 className="rowHeading">Legal</h3>
+							<div className="text-sm text-left md:text-slate-700">
+								<p className="">T&C</p>
+								<p className="">Privacy policy</p>
+							</div>
+						</div>
 					</div>
 					<div className="socials">
 						<button className="socialButton">
