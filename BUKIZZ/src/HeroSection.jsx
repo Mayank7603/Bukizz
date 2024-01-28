@@ -5,11 +5,13 @@ import ReactPlayer from 'react-player';
 function HeroSection() {
 	return (
 		<>
-			<div className=" flex flex-col">
-				<div className="flex flex-col ">
-					<div className="heroHeadline flex flex-col items-center gap-1">
-						<h2 className="text-2xl text-center">Take Your School Digital</h2>
-						<h2 className="text-2xl text-center pb-3">
+			<div className=" flex flex-col md:flex-row md:pt-64 items-center justify-center md:gap-32">
+				<div className="flex flex-col md:gap-6">
+					<div className="heroHeadline flex flex-col items-center gap-1 md:items-start">
+						<h2 className="text-2xl md:text-3xl text-center">
+							Take Your School Digital
+						</h2>
+						<h2 className="text-2xl md:text-3xl text-center pb-3">
 							Manage. Automate. Engage
 						</h2>
 						<svg
@@ -41,17 +43,17 @@ function HeroSection() {
 							</defs>
 						</svg>
 					</div>
-					<div className="text-center text-slate-500 py-3  ">
+					<div className="text-center text-slate-500 py-3 md:w-96 md:text-left ">
 						From books to fees, parents to progress, Bukizz puts everything at
 						your fingertips.
 					</div>
-					{/* <div className="heroButtonBox">
-            <button className="heroButton">
-              Book Free Demo
-            </button>
-          </div> */}
+					<div className=" h-10 mx-4 md:mx-0 md:w-88 md:h-12 bg-gradient-to-r from-sky-600 to-violet-600 rounded-2xl">
+						<button className="text-white md:text-xl text-lg p-1.5 md:p-2">
+							Book Free Demo
+						</button>
+					</div>
 				</div>
-				<div className=" ">
+				<div className=" md:h-[450px] md:w-[450px] pt-12">
 					<video
 						autoPlay
 						loop

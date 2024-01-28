@@ -9,7 +9,7 @@ const EmblaCarousel = (props) => {
 
 	return (
 		<div>
-			<div className="font-bold text-2xl bg-gradient-to-r from-violet-600 to-sky-600 inline-block text-transparent bg-clip-text">
+			<div className="font-bold md:text-4xl md:w-[500px] leading-snug text-2xl bg-gradient-to-r from-violet-600 to-sky-600 inline-block text-transparent bg-clip-text">
 				Our Community share their Bukizz Experience
 			</div>
 			<div className="embla">

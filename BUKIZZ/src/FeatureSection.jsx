@@ -72,23 +72,24 @@ function FeatureSection() {
 		<>
 			<div className="featureSectionMainBox">
 				<div className="featureSectionTitle mt-12">
-					<p className="text-2xl">What Bukizz Can</p>
-					<p className="text-2xl">Do For Your School</p>
+					<p className="text-2xl md:text-3xl">What Bukizz Can</p>
+					<p className="text-2xl md:text-3xl">Do For Your School</p>
 				</div>
-				<div className="hidden md:block featuresGrid">
-					{featuresArray.map((feature, index) => {
-						return (
-							<Feature
-								key={index}
-								logo={feature.logo}
-								heading={feature.heading}
-								text={feature.text}
-							/>
-						);
-					})}
+				<div className="hidden md:inline-block">
+					<div className=" featuresGrid ">
+						{featuresArray.map((feature, index) => {
+							return (
+								<Feature
+									key={index}
+									logo={feature.logo}
+									heading={feature.heading}
+									text={feature.text}
+								/>
+							);
+						})}
+					</div>
 				</div>
-
-				<div className="flex flex-col gap-12 pt-12 z-10">
+				<div className="flex flex-col gap-12 pt-12 z-10 md:hidden">
 					{small.map((feature, index) => {
 						return (
 							<Feature
