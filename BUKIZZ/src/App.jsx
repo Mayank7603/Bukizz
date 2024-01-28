@@ -14,22 +14,22 @@ function App() {
 			<div className="bg-slate-100 md:pt-14 md:mx-10">
 				<Navbar />
 			</div>
-			<div className="HeroSection">
+			<div className="HeroSection my-20">
 				<HeroSection />
 			</div>
-			<div className="FeatureSection">
+			<div className="FeatureSection my-20">
 				<FeatureSection />
 			</div>
-			<div className="InstallBanner">
+			<div className="InstallBanner my-20">
 				<InstallBanner />
 			</div>
-			<div className="Clients">
+			<div className="Clients my-20">
 				<Clients />
 			</div>
-			<div className="Carousel">
+			<div className="Carousel my-20">
 				<Carousel />
 			</div>
-			<div className="FinalBanner">
+			<div className="FinalBanner my-16">
 				<FinalBanner />
 			</div>
 			<div className="footerBG">

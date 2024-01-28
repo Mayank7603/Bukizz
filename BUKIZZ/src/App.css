@@ -19,27 +19,27 @@
 }
 .FeatureSection {
   z-index: 4;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 .InstallBanner {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   z-index: 4;
 }
 .Clients {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   z-index: 4;
 }
 .Carousel {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   z-index: 4;
   width: 100%;
 }
 .FinalBanner {
-  margin-top: 200px;
+  /* margin-top: 200px; */
   z-index: 8;
 }
 .Footer {
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 .footerBG {
   background-image: url("./footerBG.png");

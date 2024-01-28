@@ -7,7 +7,7 @@ import img2 from '../public/img2.png';
 function InstallBanner() {
 	return (
 		<>
-			<section className="bg-gradient-to-b from-[#39A7FF] to-[#87C4FF]   backdrop-opacity-5 h-[400px] md:h-64 w-[90%]  items-center justify-center md:pt-0 rounded-2xl overflow-hidden flex flex-col md:flex-row md:ml-12 ">
+			<section className="bg-gradient-to-t from-[#39A7FF] to-[#87C4FF] backdrop-opacity-5 h-[400px] md:h-60 w-[90%]  items-center justify-center md:pt-0 rounded-2xl overflow-hidden flex flex-col md:flex-row md:mx-12 ">
 				{/* /* background me slanted div ho gya hai  */}
 				<div className="w-full h-full  overflow-hidden fixed z-[-1] ">
 					<div className="absolute w-[9rem] h-[10rem] bg-sky-400 top-[-4] left-[8rem] skew-y-[20deg] rounded-[5px] "></div>
@@ -15,17 +15,16 @@ function InstallBanner() {
 				</div>
 
 				{/* text aur appstore vala part ho gya hai */}
-				<div className="flex flex-col  justify-center items-center gap-4 md:w-[50%] p-8 md:py-0 w-full">
-					<div className="text-3xl font-bold text-white text-left">
-						One App for all your <br />
-						Student's Need
+				<div className="flex flex-col   items-start gap-4 md:w-[90%] p-4 md:py-0 md:px-24 w-full">
+					<div className="text-3xl font-bold text-white items-star w-[80%]">
+						One App for all your Student's Need
 					</div>
 					<div className="flex flex-col md:flex-row gap-4  w-full md:items-start">
 						<img
-							className="w-40 h-12 "
+							className="w-[70%] h-[56px] md:w-44 md:h-[57px]"
 							src={apple}></img>
 						<img
-							className="w-40 h-12"
+							className="w-[70%] h-[56px] md:w-44 md:h-[57px]"
 							src={google}></img>
 					</div>
 				</div>
@@ -34,7 +33,7 @@ function InstallBanner() {
 
 				<div className=" w-[100] md:w-[50%] h-full md:ml-8 hidden md:inline-block ">
 					<img
-						className="w-[15rem]  lg:w-[20rem] fixed top-0  z-[1]"
+						className="w-[15rem]  lg:w-[20rem] fixed top-0  right-24 z-[1]"
 						src={img1}></img>
 					<img
 						className=" w-[19rem]  fixed bottom-0 right-0 z-[2]"

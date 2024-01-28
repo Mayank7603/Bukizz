@@ -3,8 +3,8 @@ import './Footer.css';
 export default function Footer() {
 	return (
 		<>
-			<div className="footerMainBox flex flex-col bg-gradient-to-t from-sky-600 to-sky-100">
-				<div className="container flex flex-col md:flex-row justify-center items-center gap-3 md:gap-24 md:items-start">
+			<div className="footerMainBox flex flex-col bg-gradient-to-t from-sky-600 to-slate-100 ">
+				<div className="container flex flex-col md:flex-row justify-center items-center gap-3 md:mb-4 md:gap-24 md:items-start">
 					<div className="address flex gap-1">
 						<svg
 							width="165"
