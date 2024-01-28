@@ -11,9 +11,9 @@ import './App.css';
 function App() {
 	return (
 		<>
-			{/* <div className="Navigation">
-        <Navbar />
-      </div> */}
+			<div className="bg-slate-100 md:pt-14 md:mx-10">
+				<Navbar />
+			</div>
 			<div className="HeroSection">
 				<HeroSection />
 			</div>

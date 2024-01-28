@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player';
 function HeroSection() {
 	return (
 		<>
-			<div className=" flex flex-col md:flex-row md:pt-64 items-center justify-center md:gap-32">
+			<div className=" flex flex-col md:flex-row md:pt-8 items-center justify-center md:gap-32">
 				<div className="flex flex-col md:gap-6">
 					<div className="heroHeadline flex flex-col items-center gap-1 md:items-start">
 						<h2 className="text-2xl md:text-3xl text-center">

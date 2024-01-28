@@ -10,15 +10,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
+    "@mui/material": "^5.15.6",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.13",
+    "@tabler/icons-react": "^2.46.0",
     "embla-carousel-autoplay": "^8.0.0-rc19",
     "embla-carousel-react": "^8.0.0-rc19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.14.1",
     "react-router-dom": "^6.21.3",
-    "sharp": "^0.33.2"
+    "sharp": "^0.33.2",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
