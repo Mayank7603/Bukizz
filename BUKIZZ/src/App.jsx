@@ -1,20 +1,20 @@
-import Navbar from './Navbar';
-import HeroSection from './HeroSection';
-import FeatureSection from './FeatureSection';
-import InstallBanner from './InstallBanner';
-import Clients from './Clients';
-import Carousel from './Carousel';
-import FinalBanner from './FinalBanner';
-import Footer from './Footer';
+import Navbar from './navbar/Navbar';
+import HeroSection from './heroSection/HeroSection';
+import FeatureSection from './featureSection/FeatureSection';
+import InstallBanner from './installBanner/InstallBanner';
+import Clients from './client/Clients';
+import Carousel from './carousel/Carousel';
+import FinalBanner from './finalBanner/FinalBanner';
+import Footer from './footer/Footer';
 import './App.css';
 
 function App() {
 	return (
 		<>
-			<div className="bg-slate-100 md:pt-14 md:mx-10">
+			<div className="bg-slate-100 md:pt-14  ">
 				<Navbar />
 			</div>
-			<div className="HeroSection md:my-15">
+			<div className="pt-28 lg:pt-0">
 				<HeroSection />
 			</div>
 			<div className="FeatureSection my-20">
@@ -33,10 +33,8 @@ function App() {
 				className="Carousel my-20">
 				<Carousel />
 			</div>
-			<div className="FinalBanner my-16">
+			<div className="footerBG md:flex md:flex-col">
 				<FinalBanner />
-			</div>
-			<div className="footerBG">
 				<Footer />
 			</div>
 		</>
