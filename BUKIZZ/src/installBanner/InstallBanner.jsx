@@ -1,6 +1,6 @@
 import google from '../../public/playstore.png';
 import apple from '../../public/appstore.png';
-import mobile from '../../public/phone.png';
+import mobile from '../../public/phone.svg';
 import img1 from '../../public/img1.png';
 import img2 from '../../public/img2.png';
 import rect1 from '../../public/rect1.png';
@@ -24,8 +24,8 @@ function InstallBanner() {
 			</div>
 
 			<div className="flex flex-col justify-center  items-start gap-4 md:w-[90%] p-6 md:py-0 md:m-0 md:px-20 mr-16">
-				<div className=" text-3xl  font-bold text-white text-left leading-snug">
-					One App for all your Student's Need
+				<div className="font-bannertext text-[40px]  font-bold text-white text-left leading-snug">
+					One App for all your <br /> Student's Need
 				</div>
 				<div className="flex flex-col md:flex-row gap-4 relative w-full  items-start">
 					<img

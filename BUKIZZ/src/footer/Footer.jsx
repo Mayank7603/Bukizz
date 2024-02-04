@@ -12,8 +12,8 @@ export default function Footer() {
 					</div>
 					<div className="flex justify-between gap-10 pb-4 md:pb-0 md:gap-12 lg:gap-36 pt-2 md:pt-0">
 						<div className="flex-col md:text-lg flex gap-4 md:gap-8">
-							<h3 className="rowHeading">Company</h3>
-							<div className="md:text-lg text-sm gap-2 text-left text-slate-600 md:gap-6 flex flex-col">
+							<h3 className="font-footerHeading rowHeading">Company</h3>
+							<div className="font-footerText md:text-lg text-sm gap-2 text-left text-slate-600 md:gap-6 flex flex-col">
 								<p className="">Solutions</p>
 								<Link to="/contactID">
 									<p className="">Contact Us</p>
@@ -27,15 +27,15 @@ export default function Footer() {
 							</div>
 						</div>
 						<div className="  flex flex-col gap-4 md:gap-8 md:w-30  ml-5 lg:m-0">
-							<h3 className="rowHeading">Legal</h3>
-							<div className="md:text-lg text-sm gap-2 text-left text-slate-600 md:gap-6 flex flex-col">
+							<h3 className="font-footerHeading rowHeading">Legal</h3>
+							<div className="font-footerText md:text-lg text-sm gap-2 text-left text-slate-600 md:gap-6 flex flex-col">
 								<p className="">T&C</p>
 								<p className="">Privacy policy</p>
 							</div>
 						</div>
 						<div className=" flex flex-col gap-4 md:gap-8">
-							<h3 className="rowHeading">Product</h3>
-							<div className="md:text-lg text-sm gap-2 text-left text-slate-600 md:gap-6 flex flex-col">
+							<h3 className="font-footerHeading rowHeading">Product</h3>
+							<div className="font-footerText md:text-lg text-sm gap-2 text-left text-slate-600 md:gap-6 flex flex-col">
 								<p className="">Courses</p>
 								<p className="">Pricing</p>
 								<p className="">Blog</p>

@@ -1,10 +1,11 @@
 import Navbar from '../navbar/Navbar';
-import logo from '../../public/aboutUs/logo.png';
-import './about.css';
+import logo from '../../public/Logo.png';
+import './contact.css';
 import { useState } from 'react';
 import axios from 'axios';
+import contact_2 from '../../public/aboutUs/contact_2.svg';
 
-const ABout = () => {
+const Contact = () => {
 	const [data, setData] = useState({
 		fname: '',
 		lname: '',
@@ -12,6 +13,14 @@ const ABout = () => {
 		schoolName: '',
 		msg: '',
 	});
+
+	const tempData = {
+		fname: '',
+		lname: '',
+		email: '',
+		schoolName: '',
+		msg: '',
+	};
 
 	const handleSubmit = () => {
 		console.log('ASDf');
@@ -22,6 +31,8 @@ const ABout = () => {
 		} catch {
 			console.log('Error occured');
 		}
+
+		setData(tempData);
 	};
 
 	const handleChange = (e) => {
@@ -36,8 +47,8 @@ const ABout = () => {
 			</div>
 			<div className="bg-slate-200 w-full md:w-[65%] pt-12">
 				<div className="pt-12"></div>
-				<div className="pt-12 md:pt-24 px-auto md:pl-40 ">
-					<div className="flex flex-col items-start gap-3 bg-white w-full md:w-[70%] pl-6 pr-3 py-6 rounded-xl">
+				<div className="pt-12 md:pt-24 px-auto md:px-32 ">
+					<div className="flex flex-col items-start gap-3 bg-white md:w-[330px] lg:w-[550px]  md:pr-4 pl-6 pr-3 py-6 rounded-xl">
 						<div className="flex gap-2 pl-32 md:pl-0 ">
 							<div>
 								<img
@@ -47,19 +58,20 @@ const ABout = () => {
 							</div>
 							<div>Bukizz</div>
 						</div>
-						<div className="text-3xl font-semibold">
+						<div className="text-[22px] font-semibold font-footerHeading">
 							Ready to take your school digital !
 						</div>
-						<div className="text-slate-500 text-lg">
+						<div className="text-slate-500 text-[16px] font-footerText">
 							Book a call with your expert to find out best solution for you
 						</div>
 						<div className="flex flex-col gap-4 items-start">
-							<div className="flex flex-col md:flex-row gap-4 w-full">
+							<div className="flex flex-col md:w-[250px] lg:flex-row gap-4 w-full">
 								<input
 									type="text"
 									placeholder="First Name*"
 									name="fname"
 									className="h-10 rounded-lg px-4 border "
+									value={data.fname}
 									onChange={handleChange}
 								/>
 								<input
@@ -67,15 +79,17 @@ const ABout = () => {
 									placeholder="Last Name*"
 									className="h-10 rounded-lg px-4 border"
 									name="lname"
+									value={data.lname}
 									onChange={handleChange}
 								/>
 							</div>
-							<div className="flex flex-col md:flex-row gap-4 w-full">
+							<div className="flex flex-col  md:w-[250px] lg lg:flex-row gap-4 w-full">
 								<input
 									type="text"
 									placeholder="School Name*"
 									className="h-10 rounded-lg px-4 border"
 									name="schoolName"
+									value={data.schoolName}
 									onChange={handleChange}
 								/>
 								<input
@@ -83,15 +97,17 @@ const ABout = () => {
 									placeholder="Email* "
 									className="h-10 rounded-lg px-4 border"
 									name="email"
+									value={data.email}
 									onChange={handleChange}
 								/>
 							</div>
-							<div className="border w-full">
+							<div className="border w-full md:w-[250px] lg:w-[440px] ">
 								<textarea
-									className=" w-full md:w-[430px] p-3"
+									className=" w-full"
 									rows={4}
 									placeholder="Your Message"
 									name="msg"
+									value={data.msg}
 									onChange={handleChange}
 								/>
 							</div>
@@ -102,7 +118,7 @@ const ABout = () => {
 							</div>
 							<div className="w-full ">
 								<button
-									className="text-xl bg-gradient-to-tr from-sky-600 to-violet-600 w-full h-12 rounded-xl text-white"
+									className="font-footerHeading text-xl bg-gradient-to-tr from-sky-600 to-violet-600 w-full h-12 rounded-xl text-white"
 									onClick={handleSubmit}>
 									Book a Free Demo
 								</button>
@@ -112,9 +128,11 @@ const ABout = () => {
 				</div>
 			</div>
 
-			<div className="rightPart w-0 md:w-[40%] hidden md:inline-block"></div>
+			<div className="rightPart w-0 md:w-[40%] hidden md:inline-block">
+				<img src={contact_2} />
+			</div>
 		</div>
 	);
 };
 
-export default ABout;
+export default Contact;

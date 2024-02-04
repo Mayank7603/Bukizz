@@ -71,7 +71,7 @@ function FeatureSection() {
 	return (
 		<>
 			<div className="featureSectionMainBox">
-				<div className="featureSectionTitle mt-12">
+				<div className="font-bannertext featureSectionTitle mt-12">
 					<p className="text-2xl md:text-4xl">What Bukizz Can</p>
 					<p className="text-2xl md:text-4xl">Do For Your School</p>
 				</div>

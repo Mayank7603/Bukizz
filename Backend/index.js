@@ -19,17 +19,20 @@ app.get("/", (req, res) => {
 })
 
 app.post("/formData", (req, res) => {
+    const q = "INSERT INTO contact_data (fname, lname, email, schoolName, msg) VALUES (?)";
+    const values = [req.body.fname, req.body.lname, req.body.email, req.body.schoolName, req.body.msg];
 
-    console.log(req.body);
+    db.query(q, [values], (err, data) => {
+        if (err) {
+            console.error("Error encountered in insertion:", err);
+            return res.status(500).json({ error: "Internal Server Error" });
+        }
 
-    const q = "INSERT INTO contact_data (fname,lname,email,schoolName,msg) VALUES (?)";
-    const values = req.body;
+        console.log("Data inserted successfully");
+        return res.status(200).json({ message: "Data inserted in database" });
+    });
+});
 
-    db.query(q, values, (err, data) => {
-        if (err) res.status(200).json()
-    })
-    res.send("post req")
-})
 
 app.listen(3000, () => {
     console.log("Listening on port ", 3000);

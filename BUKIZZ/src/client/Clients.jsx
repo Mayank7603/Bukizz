@@ -1,7 +1,7 @@
 import './Clients.css';
 import EmblaCarousel from './EmblaCarousel';
 import './embla.css';
-
+import { Link } from 'react-router-dom';
 import '../assets/fonts/fonts.css';
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 3;
@@ -29,11 +29,13 @@ export default function Clients() {
 							</p>
 						</p>
 					</div>
-					<div className="mb-4 mx-2 flex justify-center text-lg items-center rounded-xl bg-gradient-to-r from-[#39A7FF]  to-[#525CEB] text-white h-12 md:w-48 md:mt-8 md:px-0 font-semibold">
+					<Link
+						className="mb-4 mx-2 flex justify-center text-lg items-center rounded-xl bg-gradient-to-r from-[#39A7FF]  to-[#525CEB] text-white h-12 md:w-48 md:mt-10 md:px-0  font-semibold"
+						to="/contact">
 						<button>
 							<p className="font-headline">Book Free Demo</p>
 						</button>
-					</div>
+					</Link>
 				</div>
 				<div className="flex justify-center items-center md:mr-12 md-[100%] lg:w-[40%]">
 					<section className="sandbox__carousel">

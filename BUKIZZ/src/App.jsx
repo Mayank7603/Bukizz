@@ -11,7 +11,7 @@ import './App.css';
 function App() {
 	return (
 		<>
-			<div className="bg-slate-100 md:pt-14  ">
+			<div className="bg-slate-100 md:pt-28  ">
 				<Navbar />
 			</div>
 			<div className="pt-28 lg:pt-0">

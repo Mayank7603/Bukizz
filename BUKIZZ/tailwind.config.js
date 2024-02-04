@@ -8,7 +8,11 @@ export default {
     extend: {
       fontFamily: {
         headline: ['headline', 'sans-serif'],
-        subtext: ['subtext', 'sans-serif']
+        subtext: ['subtext', 'sans-serif'],
+        bannertext: ['bannertext', 'sans-serif'],
+        footerText: ['footerText', 'sans-serif'],
+        footerHeading: ['footerHeading', 'sans-serif']
+
       }
     },
   },
