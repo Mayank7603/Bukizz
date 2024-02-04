@@ -17,6 +17,7 @@
     "@mui/material": "^5.15.6",
     "@mui/styled-engine-sc": "^6.0.0-alpha.13",
     "@tabler/icons-react": "^2.46.0",
+    "axios": "^1.6.7",
     "embla-carousel-autoplay": "^8.0.0-rc19",
     "embla-carousel-react": "^8.0.0-rc19",
     "react": "^18.2.0",

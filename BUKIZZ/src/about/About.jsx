@@ -1,8 +1,34 @@
 import Navbar from '../navbar/Navbar';
 import logo from '../../public/aboutUs/logo.png';
 import './about.css';
+import { useState } from 'react';
+import axios from 'axios';
 
 const ABout = () => {
+	const [data, setData] = useState({
+		fname: '',
+		lname: '',
+		email: '',
+		schoolName: '',
+		msg: '',
+	});
+
+	const handleSubmit = () => {
+		console.log('ASDf');
+		try {
+			axios.post('http://localhost:3000/formData', data).then((res) => {
+				console.log(res);
+			});
+		} catch {
+			console.log('Error occured');
+		}
+	};
+
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setData({ ...data, [name]: value });
+	};
+
 	return (
 		<div className=" flex h-[100vh]">
 			<div className="fixed md:top-[57px] md:w-[95%] w-full md:right-10 z-10">
@@ -32,12 +58,16 @@ const ABout = () => {
 								<input
 									type="text"
 									placeholder="First Name*"
+									name="fname"
 									className="h-10 rounded-lg px-4 border "
+									onChange={handleChange}
 								/>
 								<input
 									type="text"
 									placeholder="Last Name*"
 									className="h-10 rounded-lg px-4 border"
+									name="lname"
+									onChange={handleChange}
 								/>
 							</div>
 							<div className="flex flex-col md:flex-row gap-4 w-full">
@@ -45,11 +75,15 @@ const ABout = () => {
 									type="text"
 									placeholder="School Name*"
 									className="h-10 rounded-lg px-4 border"
+									name="schoolName"
+									onChange={handleChange}
 								/>
 								<input
 									type="text"
 									placeholder="Email* "
 									className="h-10 rounded-lg px-4 border"
+									name="email"
+									onChange={handleChange}
 								/>
 							</div>
 							<div className="border w-full">
@@ -57,6 +91,8 @@ const ABout = () => {
 									className=" w-full md:w-[430px] p-3"
 									rows={4}
 									placeholder="Your Message"
+									name="msg"
+									onChange={handleChange}
 								/>
 							</div>
 							<div className="text-xs text-left text-slate-500  justify-center items-center w-full">
@@ -65,7 +101,9 @@ const ABout = () => {
 								customer journeys. See our Privacy Policy for more info.
 							</div>
 							<div className="w-full ">
-								<button className="text-xl bg-gradient-to-tr from-sky-600 to-violet-600 w-full h-12 rounded-xl text-white">
+								<button
+									className="text-xl bg-gradient-to-tr from-sky-600 to-violet-600 w-full h-12 rounded-xl text-white"
+									onClick={handleSubmit}>
 									Book a Free Demo
 								</button>
 							</div>
