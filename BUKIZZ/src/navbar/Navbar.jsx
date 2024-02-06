@@ -32,12 +32,14 @@ export default function Navbar() {
 
 			<div className="flex justify-between bg-white md:rounded-full h-16 px-4 md:w-[90%] md:mx-auto md:h-20">
 				<div className="flex justify-between  items-center gap-12">
-					<div className="flex justify-between  items-center gap-4 md:px-4">
+					<Link
+						className="flex justify-between  items-center gap-4 md:px-4"
+						to="/">
 						<img
 							src={Logo}
 							className="w-8 h-8"></img>
 						<h2 className="font-semibold text-xl">bukizz</h2>
-					</div>
+					</Link>
 					<div className="font-footerText hidden justify-between  items-center gap-4  md: visible md:inline-block md:mt-1">
 						<ul className="md:flex md:justify-between  md:items-center md:gap-12   md:px-4 md:text-slate-500">
 							<li>
