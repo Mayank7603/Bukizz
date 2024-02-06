@@ -1,12 +1,13 @@
 import Navbar from '../navbar/Navbar';
 import logo from '../../public/Logo.png';
-import './contact.css';
+// import './contact.css';
 import { useState } from 'react';
 import axios from 'axios';
 import contact_2 from '../../public/aboutUs/contact_2.svg';
 
 const Contact = () => {
 	const [data, setData] = useState({
+		s_no: '',
 		fname: '',
 		lname: '',
 		email: '',
@@ -15,6 +16,7 @@ const Contact = () => {
 	});
 
 	const tempData = {
+		s_no: '',
 		fname: '',
 		lname: '',
 		email: '',
@@ -23,10 +25,10 @@ const Contact = () => {
 	};
 
 	const handleSubmit = () => {
-		console.log('ASDf');
+		data.s_no = Date.now();
 		try {
 			axios.post('http://localhost:3000/formData', data).then((res) => {
-				console.log(res);
+				console.log('Inserted');
 			});
 		} catch {
 			console.log('Error occured');
@@ -36,13 +38,15 @@ const Contact = () => {
 	};
 
 	const handleChange = (e) => {
-		const { name, value } = e.target;
-		setData({ ...data, [name]: value });
+		if (e) {
+			const { name, value } = e.target;
+			setData({ ...data, [name]: value });
+		}
 	};
 
 	return (
 		<div className=" flex h-[100vh]">
-			<div className="fixed md:top-[57px] md:w-[95%] w-full md:right-10 z-10">
+			<div className="fixed md:top-[57px] md:w-[95%] w-full md:right-16 z-10">
 				<Navbar />
 			</div>
 			<div className="bg-slate-200 w-full md:w-[65%] pt-12">

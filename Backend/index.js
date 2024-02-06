@@ -19,8 +19,9 @@ app.get("/", (req, res) => {
 })
 
 app.post("/formData", (req, res) => {
-    const q = "INSERT INTO contact_data (fname, lname, email, schoolName, msg) VALUES (?)";
-    const values = [req.body.fname, req.body.lname, req.body.email, req.body.schoolName, req.body.msg];
+
+    const q = "INSERT INTO contact_data (s_no,fname, lname, email, schoolName, msg) VALUES (?)";
+    const values = [req.body.s_no, req.body.fname, req.body.lname, req.body.email, req.body.schoolName, req.body.msg];
 
     db.query(q, [values], (err, data) => {
         if (err) {

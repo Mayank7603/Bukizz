@@ -21,7 +21,7 @@ export default function Navbar() {
 					}}
 				/>
 
-				<div className="flex flex-col pt-16 pl-16  w-56 gap-8 font-semibold font-subtext text-2xl">
+				<div className="flex flex-col pt-16 pl-16  w-56 gap-8 font-semibold font-subtext text-2xl text-slate-600">
 					<p>Solution</p>
 					<Link to="https://bukizz.com/contact">
 						<p>Contact</p>
@@ -38,16 +38,16 @@ export default function Navbar() {
 							className="w-8 h-8"></img>
 						<h2 className="font-semibold text-xl">bukizz</h2>
 					</div>
-					<div className="font-footerText hidden justify-between  items-center gap-4  md: visible md:inline-block ">
-						<ul className="md:flex md:justify-between  md:items-center md:gap-12 md:text-lg  md:px-4 md:text-slate-500">
+					<div className="font-footerText hidden justify-between  items-center gap-4  md: visible md:inline-block md:mt-1">
+						<ul className="md:flex md:justify-between  md:items-center md:gap-12   md:px-4 md:text-slate-500">
 							<li>
-								<a href="#">Solution</a>
+								<a href="/solution">Solution</a>
 							</li>
 							<li>
 								<Link to="/contact">Contact</Link>
 							</li>
 							<li>
-								<a href="#">About</a>
+								<a href="/about1">About</a>
 							</li>
 						</ul>
 					</div>
