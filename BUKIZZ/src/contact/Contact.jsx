@@ -49,7 +49,7 @@ const Contact = () => {
 			<div className="fixed md:top-[57px] md:w-[95%] w-full md:right-16 z-10">
 				<Navbar />
 			</div>
-			<div className="bg-slate-200 w-full md:w-[65%] pt-12">
+			<div className="bg-[#F4F7FF] w-full md:w-[65%] pt-12">
 				<div className="pt-12"></div>
 				<div className="pt-12 md:pt-24 px-auto md:px-32 ">
 					<div className="flex flex-col items-start gap-3 bg-white md:w-[330px] lg:w-[550px]  md:pr-4 pl-6 pr-3 py-6 rounded-xl">
@@ -132,7 +132,7 @@ const Contact = () => {
 				</div>
 			</div>
 
-			<div className="rightPart w-0 md:w-[40%] hidden md:inline-block">
+			<div className="rightPart w-0 md:w-[40%] hidden md:inline-block bg-gradient-to-br from-sky-600 to-violet-600">
 				<img src={contact_2} />
 			</div>
 		</div>

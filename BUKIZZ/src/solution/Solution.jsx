@@ -102,7 +102,7 @@ const Solution = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col md:flex-row-reverse gap-6 md:gap-12 justify-around mx-12 md:mx-32 ">
+				<div className="flex flex-col md:flex-row gap-6 md:gap-12 justify-around mx-12 md:mx-32 ">
 					<div className="bg-sky-500 px-10 rounded-[21px] md:w-[500px] pt-[55px] pl-20 ">
 						<img
 							src={sol2}
@@ -228,7 +228,7 @@ const Solution = () => {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col md:flex-row md:justify-center gap-12 mt-24 mb-32 z-10  ">
+			<div className="flex flex-col md:flex-row md:justify-center gap-12 mt-24 mb-32   ">
 				{small.map((feature, index) => {
 					return (
 						<Feature
