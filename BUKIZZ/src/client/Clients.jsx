@@ -1,6 +1,6 @@
 import './Clients.css';
-import EmblaCarousel from './EmblaCarousel';
-import './embla.css';
+import EmblaClientCarousel from './EmblaClientCarousel';
+import '../carousel/embla.css';
 import { Link } from 'react-router-dom';
 import '../assets/fonts/fonts.css';
 const OPTIONS = { loop: true };
@@ -39,7 +39,7 @@ export default function Clients() {
 				</div>
 				<div className="flex justify-center items-center md:mr-12 md-[100%] lg:w-[40%]">
 					<section className="sandbox__carousel">
-						<EmblaCarousel
+						<EmblaClientCarousel
 							slides={SLIDES}
 							options={OPTIONS}
 						/>
