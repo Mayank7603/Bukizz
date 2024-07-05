@@ -1,10 +1,9 @@
-import google from '../../public/playstore.png';
-import apple from '../../public/appstore.png';
-import mobile from '../../public/phone.svg';
-import img1 from '../../public/img1.png';
-import img2 from '../../public/img2.png';
-import rect1 from '../../public/rect1.png';
-import rect2 from '../../public/rect2.png';
+import google from '/playstore.png';
+import apple from '/appstore.png';
+import img1 from '/img1.png';
+import img2 from '/img2.png';
+import rect1 from '/rect1.png';
+import rect2 from '/rect2.png';
 import './InstallBanner.css';
 
 function InstallBanner() {

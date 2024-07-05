@@ -1,7 +1,7 @@
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
-import pic from '../../public/group.svg';
-import pic2 from '../../public/finalBannerRect.png';
+import pic from '/group.svg';
+import pic2 from '/finalBannerRect.png';
 import { Link } from 'react-router-dom';
 const About = () => {
 	return (

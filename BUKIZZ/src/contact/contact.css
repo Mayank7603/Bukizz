@@ -6,6 +6,6 @@
 }
 
 .rightPart{
-    background-image: url("../public/aboutUs/backGround.png");
+    background-image: url("/aboutUs/backGround.png");
     z-index: 1;
 }

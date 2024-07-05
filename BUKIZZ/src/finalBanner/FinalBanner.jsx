@@ -1,5 +1,5 @@
 import './FinalBanner.css';
-import pic from '../../public/finalBannerRect.png';
+import pic from '/finalBannerRect.png';
 import { Link } from 'react-router-dom';
 
 export default function FinalBanner() {

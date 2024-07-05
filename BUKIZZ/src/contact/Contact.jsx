@@ -1,9 +1,9 @@
 import Navbar from '../navbar/Navbar';
-import logo from '../../public/Logo.png';
+import logo from '/Logo.png';
 // import './contact.css';
 import { useState } from 'react';
 import axios from 'axios';
-import contact_2 from '../../public/aboutUs/contact_2.svg';
+import contact_2 from '/aboutUs/contact_2.svg';
 
 const Contact = () => {
 	const [data, setData] = useState({

@@ -1,10 +1,10 @@
 import Navbar from '../navbar/Navbar';
 import Footer from '../footer/Footer';
-import pic from '../../public/group.svg';
-import sol1 from '../../public/solmg1.svg';
-import sol2 from '../../public/solmg2.svg';
-import sol3 from '../../public/solmg4.svg';
-import pic2 from '../../public/finalBannerRect.png';
+import pic from '/group.svg';
+import sol1 from '/solmg1.svg';
+import sol2 from '/solmg2.svg';
+import sol3 from '/solmg4.svg';
+import pic2 from '/finalBannerRect.png';
 import { Link } from 'react-router-dom';
 
 import Feature from './feature/Feature';

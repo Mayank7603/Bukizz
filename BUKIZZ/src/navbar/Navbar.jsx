@@ -1,6 +1,6 @@
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import Logo from '../../public/Logo.png';
+import Logo from '/Logo.png';
 import { IconCross, IconMenu2, IconX } from '@tabler/icons-react';
 import { useState } from 'react';
 import { Drawer } from '@mui/material';

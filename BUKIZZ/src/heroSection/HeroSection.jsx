@@ -1,6 +1,4 @@
-import { useRef } from 'react';
 import './HeroSection.css';
-import ReactPlayer from 'react-player';
 import { IconArrowRight } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
 

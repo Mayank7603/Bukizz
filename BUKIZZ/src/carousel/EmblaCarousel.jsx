@@ -17,7 +17,7 @@ const EmblaCarousel = (props) => {
 							className="embla__slide "
 							key={index}>
 							<img
-								className="embla__slide__img  "
+								className="embla__slide__img h-full "
 								src={arr(index)}
 								alt="Your alt text"
 							/>
