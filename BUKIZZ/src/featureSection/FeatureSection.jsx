@@ -1,9 +1,9 @@
-import "./FeatureSection.css";
-import Feature from "./feature/Feature";
-import featureByIndex_mb from "./featureByIndex_mb";
-import EmblaCarousel from "./EmblaCarousel";
-import featureByIndex from "./featureByIndex";
-import { useState } from "react";
+import './FeatureSection.css';
+import Feature from './feature/Feature';
+import featureByIndex_mb from './featureByIndex_mb';
+import EmblaCarousel from './EmblaCarousel';
+import featureByIndex from './featureByIndex';
+import { useState } from 'react';
 
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 5;
@@ -39,11 +39,11 @@ function FeatureSection() {
 								text={feature.text}
 							/>
 						);
-					})} 
-        </div>*/}
-      </div>
-    </>
-  );
+					})} */}
+				</div>
+			</div>
+		</>
+	);
 }
 
 export default FeatureSection;
