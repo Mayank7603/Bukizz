@@ -6,7 +6,7 @@
   position: relative;
   /* z-index: 4; */
   overflow: hidden;
-  height: 1000px;
+  /* height: 1000px; */
 }
 .featureSectionMainBox::before {
   /* z-index: 1; */
